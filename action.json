@@ -1,0 +1,27 @@
+{
+    "versionLabel": "1.0.0",
+    "agentInfo": {
+        "languageCode": "en-US",
+        "projectId": "my-first-action",
+        "voiceName": "male_1"
+    },
+    "actions": [{
+        "initialTrigger": {
+            "intent": "assistant.intent.action.MAIN"
+        },
+        "httpExecution": {
+            "url": "https://d00fe3f3.ngrok.io"
+        }
+    }, {
+        "description": "Deep link that speaks back the date",
+        "initial_trigger": {
+            "intent": "my.deeplink.intent",
+            "queryPatterns": [
+                { "queryPattern": "know what is the date" }
+            ]
+        },
+        "http_execution": {
+            "url": "https://d00fe3f3.ngrok.io"
+        }
+    }]
+}
