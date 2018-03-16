@@ -71,6 +71,7 @@ function conversationMessage(request, workspaceId) {
 		  context: context
 		},
 		function(err, watsonResponse) {
+			console.log(watsonResponse)
 		  if (err) {
 			console.error(err);
 			reject('Error talking to Watson.');
