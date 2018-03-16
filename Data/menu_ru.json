@@ -1,0 +1,666 @@
+{
+  "Saurupt": {
+    "menu": {
+      "19/03/18": {
+        "Midi": {
+          "Self": [
+            "sauté de porc hollandaise",
+            "filet de hoki",
+            "riz",
+            "gratin de courgettes"
+          ],
+          "Salle_Administrative": [
+            "sauté de porc hollandaise",
+            "filet de hoki",
+            "bavette à l’échalote",
+            "riz",
+            "trio de légumes",
+            "gratin de courgettes"
+          ],
+          "Cafeteria": [
+            "entrées froides",
+            "pasta box",
+            "potage",
+            "sandwich/panini",
+            "plat du jour",
+            "confiseries",
+            "desserts lactés/fruits"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "croque monsieur",
+            "brochette de poisson nature",
+            "trio de légumes",
+            "potatoes"
+          ]
+        }
+      },
+      "20/03/18": {
+        "Midi": {
+          "Self": [
+            "poulet rôti",
+            "filet de colin mariné",
+            "frites",
+            "pois carottes"
+          ],
+          "Salle_Administrative": [
+            "poulet rôti",
+            "filet de colin mariné",
+            "goulasch",
+            "frites",
+            "pois carottes",
+            "duo de choux"
+          ],
+          "Cafeteria": [
+            "entrées froides",
+            "pasta box",
+            "potage",
+            "sandwich/panini",
+            "plat du jour",
+            "confiseries",
+            "desserts lactés/fruits"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "goulasch",
+            "quenelles de brochet",
+            "semoule",
+            "duo de choux"
+          ]
+        }
+      },
+      "21/03/18": {
+        "Midi": {
+          "Self": [
+            "pavé de merlu",
+            "tajine VG",
+            "semoule",
+            "brocolis"
+          ],
+          "Salle_Administrative": [
+            "pavé de merlu",
+            "tajine VG",
+            "grillade de porc savoyarde",
+            "semoule",
+            "brocolis",
+            "printanière"
+          ],
+          "Cafeteria": [
+            "entrées froides",
+            "pasta box",
+            "potage",
+            "sandwich/panini",
+            "plat du jour",
+            "confiseries",
+            "desserts lactés/fruits"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "beignet de poisson",
+            "escalope de porc savoyarde",
+            "quinoa",
+            "printanière"
+          ]
+        }
+      },
+      "22/03/18": {
+        "Midi": {
+          "Self": [
+            "poisson frais",
+            "cordon bleu",
+            "pomme vapeur",
+            "carottes primeur"
+          ],
+          "Salle_Administrative": [
+            "poisson frais",
+            "pdt et son accompagnement",
+            "émincé de volaille au poivre",
+            "carottes primeur",
+            "poêlée forestière"
+          ],
+          "Cafeteria": [
+            "entrées froides",
+            "pasta box",
+            "potage",
+            "sandwich/panini",
+            "plat du jour",
+            "confiseries",
+            "desserts lactés/fruits"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "filet meunière",
+            "émincé de volaille au poivre",
+            "poêlée forestière",
+            "pdt rôties"
+          ]
+        }
+      },
+      "23/03/18": {
+        "Midi": {
+          "Self": [
+            "pavé de saumon",
+            "cervelas alsacien",
+            "penne",
+            "flageolets carottes"
+          ],
+          "Salle_Administrative": [
+            "pavé de saumon",
+            "cervelas alsacien",
+            "boule bœuf",
+            "penne",
+            "battonnière de légumes",
+            "flageolets carottes"
+          ],
+          "Cafeteria": [
+            "entrées froides",
+            "pasta box",
+            "potage",
+            "sandwich/panini",
+            "plat du jour",
+            "confiseries",
+            "desserts lactés/fruits"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Pas de service"
+          ]
+        }
+      }
+    }
+  },
+  "Brabois": {
+    "menu": {
+      "19/03/18": {
+        "Midi": {
+          "Brasserie": [
+            "sauté d'agneau au thym",
+            "émincé de porc aux champignons noirs",
+            "filet de tilapia à la tomate",
+            "palette à la diable",
+            "plat végétarien:quiche tomate mozza",
+            "riz pilaf",
+            "poêlé italienne",
+            "flageolet /carotte"
+          ],
+          "Zen": [
+            "steak haché sauce poivre",
+            "filet de tilapia à la tomate",
+            "riz pilaf",
+            "flageolet /carotte"
+          ],
+          "Pop": [
+            "palette à la diable",
+            "plat végétarien:quiche tomate mozza",
+            "riz pilaf",
+            "flageolet /carotte"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Chaîne traditionnelle",
+            "penne à la bolognaise",
+            "filet de merlu sauce citron",
+            "pennes au beurre",
+            "poêlé italienne"
+          ]
+        }
+      },
+      "20/03/18": {
+        "Midi": {
+          "Brasserie": [
+            "cordon bleu",
+            "filet de sandre sauce beurre blanc",
+            "poulet Hyderabad",
+            "pâté lorrain+salade verte",
+            "plat végétarien:galette de blé gratinée",
+            "spaetzle au beurre",
+            "gratin de légumes",
+            "épinard béchamel"
+          ],
+          "Zen": [
+            "nugget de volaille",
+            "filet de merlu sauce citron",
+            "frites",
+            "épinard béchamel"
+          ],
+          "Pop": [
+            "pizza reine",
+            "plat végétarien:galette de blé gratinée",
+            "frites",
+            "épinard béchamel"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "crêpes au fromage",
+            "chipolatas",
+            "purée mousseline",
+            "carottes à la crème"
+          ]
+        }
+      },
+      "21/03/18": {
+        "Midi": {
+          "Brasserie": [
+            "salle brasserie",
+            "endives au jambon",
+            "blanquette de poisson",
+            "daube d’Avignon",
+            "quiche lorraine+salade verte"
+          ],
+          "Zen": [
+            "merguez",
+            "blanquette de poisson",
+            "potatoes",
+            "haricot vert"
+          ],
+          "Pop": [
+            "hamburger maison",
+            "potatoes",
+            "haricot vert"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Chaîne traditionnelle",
+            "hoki duo tomate",
+            "sot l'y laisse de dinde",
+            "riz créole",
+            "navets gratinés"
+          ]
+        }
+      }
+    },
+    "22/03/18": {
+      "Midi": {
+        "Brasserie": [
+          "bouchée de volaille aux fruit secs",
+          "poisson du jour",
+          "palette de porc aux lentilles",
+          "carré de porc andalouse",
+          "brocolis vapeur",
+          "poêlè champêtre"
+        ],
+        "Zen": [
+          "croque monsieur+salade verte",
+          "poisson du jour",
+          "pomme de terre rôties",
+          "brocolis vapeur"
+        ],
+        "Pop": [
+          "palette de porc",
+          "lentilles",
+          "brocolis vapeur"
+        ]
+      },
+      "Soir": {
+        "Self": [
+          "pizza 4 saisons",
+          "filet de merlu sauce ciboulette",
+          "potatoes",
+          "poêlé méridionale"
+        ]
+      }
+    }
+  },
+  "23/03/18": {
+    "Midi": {
+      "Self": [
+        "Boulette de boeuf",
+        "Kebab",
+        "Nuggets de poisson",
+        "Haricots verts persillés",
+        "Frites"
+      ],
+      "Brasserie": [
+        "Kebab",
+        "Brochette de boeuf",
+        "Calamars à la romaine",
+        "Haricots verts persillés",
+        "Potatoes"
+      ],
+      "Salle administrative": [
+        "Mini brochette de boeuf",
+        "Kebab",
+        "Calamars à la romaine",
+        "Haricots verts persillés",
+        "Potatoes"
+      ]
+    },
+    "Soir": {
+      "Self": [
+        ""
+      ]
+    }
+  },
+  "Cours Léopold": {
+    "menu": {
+      "19/03/18": {
+        "Midi": {
+          "Brasserie": [
+            "Blanquette de veau",
+            "Bavette sauce à l'échalote",
+            "Coquelet rôti",
+            "Côtes d'agneau aux herbes",
+            "Filet de poisson meunière",
+            "Croque monsieur",
+            "Pennes sicilienne",
+            "Steak haché",
+            "Frites",
+            "Haricots beurre"
+          ],
+          "Self": [
+            "Brochette de poisson sauce fruits de mer",
+            "Pennes sicilienne",
+            "Poelee de brocolis",
+            "Pennes au beurre",
+            "Pennes figolli"
+          ],
+          "Fast Food": [
+            "Nuggets de volaille",
+            "Knack",
+            "Escalope viennoise",
+            "Beignets de poisson",
+            "Tarte aux trois fromages",
+            "Frites"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Sauté de porc",
+            "Carré de colin sauce crème poisson",
+            "Purée à la moutarde",
+            "Haricots verts persillés"
+          ]
+        }
+      },
+      "20/03/18": {
+        "Midi": {
+          "Brasserie": [
+            "Côte de veau",
+            "Steak haché sauce forestière",
+            "Faux filet grillé",
+            "Poisson frais sauce hollandaise",
+            "Couscous aux trois viandes",
+            "Brocolis",
+            "Semoule aux raisins",
+            "Frites",
+            "Julienne de légumes"
+          ],
+          "Self": [
+            "Dos de colin sauce dieppoise",
+            "Couscous poulet merguez",
+            "Brocolis",
+            "Semoule"
+          ],
+          "Fast Food": [
+            "Pizza trois fromages",
+            "Cuisse de poulet sauce à la diable",
+            "Calamars à la romaine",
+            "Pommes rissolées"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Blanc de dinde sauce cury",
+            "Omelette aux champignons",
+            "Julienne de légumes",
+            "Pommes de terre hongroise"
+          ]
+        }
+      },
+      "21/03/18": {
+        "Midi": {
+          "Brasserie": [
+            "Paupiette de veau marengo",
+            "Poulet Label Rouge",
+            "Steak rumsteak sauce marchand de vin",
+            "Steak haché sauce au poivre",
+            "Filet de hocki pané",
+            "Poêlée campagnarde",
+            "Frites",
+            "Riz pilaf aux raisins",
+            "Carottes rondelles",
+            "Poêlée campagnarde"
+          ],
+          "Self": [
+            "Poitrine de veau farcie",
+            "Filet de poisson meunière",
+            "Riz pilaf",
+            "Carottes rondelles"
+          ],
+          "Fast Food": [
+            "Cheesburger",
+            "Beignets de poisson",
+            "Croque monsieur",
+            "Frites"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Duo de hocki tomate",
+            "Sphaghettis bolognaise",
+            "Courgettes provençales",
+            "Sphaghettis nature"
+          ]
+        }
+      },
+      "22/03/18": {
+        "Midi": {
+          "Brasserie": [
+            "Jambon grillé sauce madère",
+            "Steak haché sauce poivre",
+            "Côtes d'agneau aux herbes",
+            "Escalope de dinde panée",
+            "Croque monsieur",
+            "Dos de colin sauce safranée",
+            "Frites",
+            "Petits pois carottes",
+            "Choux fleurs"
+          ],
+          "Self": [
+            "Jambon grillé sauce madère",
+            "Dos de colin sauce safranée",
+            "Petits pois carottes",
+            "Choux fleurs",
+            "Farfalles sauce veggie bolognaise"
+          ],
+          "Fast Food": [
+            "Boulette de bœuf à la tomate",
+            "Nuggets de volaille",
+            "Fish and chips",
+            "Tarte aux poireaux",
+            "Frites"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Cervelas obernois",
+            "Emincé de dinde sicilienne",
+            "Duo carottes choux",
+            "Gnocchis"
+          ]
+        }
+      },
+      "23/03/18": {
+        "Midi": {
+          "Brasserie": [
+            "Jambon grillé sauce madère",
+            "Steak haché sauce poivre",
+            "Côtes d'agneau aux herbes",
+            "Escalope de dinde panée",
+            "Croque monsieur",
+            "Dos de colin sauce safranée",
+            "Frites",
+            "Petits pois carottes",
+            "Choux fleurs"
+          ],
+          "Self": [
+            "Jambon grillé sauce madère",
+            "Dos de colin sauce safranée",
+            "Petits pois carottes",
+            "Choux fleurs",
+            "Farfalles sauce veggie bolognaise"
+          ],
+          "Fast Food": [
+            "Boulette de bœuf à la tomate",
+            "Nuggets de volaille",
+            "Fish and chips",
+            "Tarte aux poireaux",
+            "Frites"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Cervelas obernois",
+            "Emincé de dinde sicilienne",
+            "Duo carottes choux",
+            "Gnocchis"
+          ]
+        }
+      }
+    }
+  },
+  "Medreville": {
+    "menu": {
+      "19/03/18": {
+        "Midi": {
+          "Self": [
+            "Sauté de porc à la bière",
+            "Steak haché sauce poivre",
+            "Filet de hoki pané",
+            "Carottes persillées",
+            "Pennes"
+          ],
+          "Brasserie": [
+            "Sauté de porc à la bière",
+            "Bavette à l'échalote",
+            "Poisson basquaise",
+            "Carottes persillées",
+            "Pennes"
+          ],
+          "Salle administrative": [
+            "Sauté de porc à la bière",
+            "Steak haché sauce poivre",
+            "Poisson basquaise",
+            "Carottes persillées",
+            "Pennes"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Cheeseburger",
+            "Fish and chips",
+            "Röstis",
+            "Haricots verts carottes"
+          ]
+        }
+      },
+      "20/03/18": {
+        "Midi": {
+          "Self": [
+            "Pizza royale",
+            "Pilon de poulet tex-mex",
+            "Filet de colin meunière",
+            "Julienne provençale",
+            "Frites"
+          ],
+          "Brasserie": [
+            "Quiche lorraine",
+            "Brochette de poulet",
+            "Filet de colin meunière",
+            "Semoule",
+            "Julienne provençale"
+          ],
+          "Salle administrative": [
+            "Quiche lorraine",
+            "Pilon de poulet tex-mex",
+            "Filet de colin meunière",
+            "Julienne provençale",
+            "Frites"
+          ]
+        },
+        "Soir": {
+          "Self": [
+            "Saucisse de volaille",
+            "Tarte au fromage",
+            "Boulgour à la tomate",
+            "Ratatouille"
+          ]
+        }
+      }
+    },
+    "21/03/18": {
+      "Midi": {
+        "Self": [
+          "Boeuf bourguignon",
+          "Escalope de volaille",
+          "Gratin nantua",
+          "Bâtonnière de légumes",
+          "Pomme de terre persillée"
+        ],
+        "Brasserie": [
+          "Boeuf bourguignon",
+          "Escalope de volaille",
+          "Gratin nantua",
+          "Bâtonnière de légumes",
+          "Pomme de terre persillée"
+        ],
+        "Salle administrative": [
+          "Boeuf bourguignon",
+          "Escalope de volaille",
+          "Gratin nantua",
+          "Bâtonnière de légumes",
+          "Pomme de terre persillée"
+        ]
+      },
+      "Soir": {
+        "Self": [
+          "Lasagne",
+          "Brochette de poisson",
+          "Haricots beurre persillés",
+          "Riz aux légumes"
+        ]
+      }
+    }
+  },
+  "22/03/18": {
+    "Midi": {
+      "Self": [
+        "Rissolette de veau",
+        "Sauté de volaille basquaise",
+        "Tilapia sauce dugléré",
+        "Brocolis",
+        "Riz blanc"
+      ],
+      "Brasserie": [
+        "Rôti de veau",
+        "Sauté de volaille basquaise",
+        "Tilapia sauce dugléré",
+        "Brocolis",
+        "Riz blanc"
+      ],
+      "Salle administrative": [
+        "Rôti de veau",
+        "Sauté de volaille basquaise",
+        "Tilapia sauce dugléré",
+        "Brocolis",
+        "Riz blanc"
+      ]
+    },
+    "Soir": {
+      "Self": [
+        "Curry d'agneau",
+        "Calamars à la romaine",
+        "Frites",
+        "Choux-fleurs persillés"
+      ]
+    }
+  }
+}
