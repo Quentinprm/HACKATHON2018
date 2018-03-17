@@ -19,6 +19,8 @@ let redisClient;
 let context;
 let Wresponse;
 
+var edt = require('./Data/edt.json');
+
 function errorResponse(reason) {
 	return {
 	  version: '1.0',
@@ -113,17 +115,295 @@ function getSessionContext(sessionId) {
 	  const newContextString = JSON.stringify(context);
 	  // Saved context will expire in 600 secs.
 	  redisClient.set(sessionId, newContextString, 'EX', 600);
-	  console.log('Saved context in Redis');
-	  console.log(sessionId);
+	  	console.log('Saved context in Redis');
+	  	console.log(sessionId);
 		console.log(newContextString);
 		console.log('---------');
 	}
   }
 
 function sendResponse(response, resolve) {
-	
+		var tabEdt = []
+		var message = ''
+
+		if (response.output.status) {
+				if (response.output.status == 1) {
+		  			if(context.groupe) {
+			  			edt.features.forEach(function(feature) {
+					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
+					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.groupe)) {
+					  				var today = new Date();
+
+					  				if(context.date) {
+					  					today = new Date(context.date)
+					  				}
+
+									var dd = today.getDate();
+									var mm = today.getMonth()+1;
+
+									var yyyy = today.getFullYear();
+
+									if(dd < 10){
+									    dd = '0' + dd;
+									} 
+									if(mm < 10){
+									    mm = '0' + mm;
+									} 
+									var today = yyyy + '/' + mm + '/' + dd;
+
+									if(feature.properties['Date'] == today.toString()) {
+										var properties = feature.properties
+
+										message += ' A ' + properties['Heure début'] + ', vous avez cours de ' + properties['Intitulé'] + ', pour une durée de ' + (parseInt(properties['Durée (min)']) / 60) + ' heures, avec ' + properties['Enseignant'] + ' en salle ' + properties['Lieu'] + '.'
+									}
+					  			}
+					  		}
+						});
+						
+						context = {}
+
+						if(message == '') {
+							message += 'Vous n\'avez pas cours ce jour.'
+						}
+					}
+				}
+
+		  		if (response.output.status == 2) {
+		  			if(context.groupe) {
+		  				var boolean = false
+
+			  			edt.features.forEach(function(feature) {
+					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
+					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.groupe)) {
+					  				var today = new Date();
+
+					  				if(context.date) {
+					  					today = new Date(context.date)
+					  				}
+
+									var dd = today.getDate();
+									var mm = today.getMonth()+1;
+
+									var yyyy = today.getFullYear();
+
+									if(dd < 10){
+									    dd = '0' + dd;
+									} 
+									if(mm < 10){
+									    mm = '0' + mm;
+									} 
+									var today = yyyy + '/' + mm + '/' + dd;
+
+									if(feature.properties['Date'] == today.toString() && !boolean) {
+										var properties = feature.properties
+
+										message += ' Vous commencez à ' + properties['Heure début'] + '. Pensez à mettre un réveil !'
+										boolean = true
+									}
+					  			}
+					  		}
+						});
+
+						context = {}
+
+						if(message == '') {
+							message += 'Vous n\'avez pas cours ce jour.'
+						}
+					}
+		  		}
+
+		  		if (response.output.status == 3) {
+		  			if(context.groupe) {
+			  			edt.features.forEach(function(feature) {
+					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
+					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.groupe)) {
+					  				var today = new Date();
+
+					  				if(context.date) {
+					  					today = new Date(context.date)
+					  				}
+
+									var dd = today.getDate();
+									var mm = today.getMonth()+1;
+
+									var yyyy = today.getFullYear();
+
+									if(dd < 10){
+									    dd = '0' + dd;
+									} 
+									if(mm < 10){
+									    mm = '0' + mm;
+									} 
+									var today = yyyy + '/' + mm + '/' + dd;
+
+									if(feature.properties['Date'] == today.toString()) {
+										var properties = feature.properties
+
+										message = ' Vous finissez à ' + parseFloat(new Date('February 5, 2001 ' + properties['Heure début']).getHours() + (parseFloat(properties['Durée (min)']) / 60)) + ' heures.'
+									}
+					  			}
+					  		}
+						});
+
+						context = {}
+
+						if(message == '') {
+							message += 'Vous n\'avez pas cours ce jour.'
+						}
+					}
+		  		}
+
+		  		if (response.output.status == 4) {
+		  			if(context.groupe) {
+		  				var boolean = false
+
+			  			edt.features.forEach(function(feature) {
+					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
+					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.cours.toLowerCase()) && feature.properties['Intitulé'].toLowerCase().includes(context.groupe) && !boolean) {
+										var properties = feature.properties
+
+										message = ' Le prochain cours de ' + properties['Intitulé'] + ' est le ' + properties['Date'] + ' à ' + properties['Heure début'] + '.'
+										boolean = true
+					  			}
+					  		}
+						});
+
+						context = {}
+
+						if(message == '') {
+							message += 'Vous n\'avez pas ce cours.'
+						}
+					}
+		  		}
+		  		if (response.output.status == 5) {
+		  			if(context.groupe) {
+			  			edt.features.forEach(function(feature) {
+					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
+					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.groupe) && feature.properties['Intitulé'].toLowerCase().includes(context.groupe)) {
+					  				var today = new Date();
+
+					  				if(context.date) {
+					  					today = new Date(context.date)
+					  				}
+
+									var dd = today.getDate();
+									var mm = today.getMonth()+1;
+
+									var yyyy = today.getFullYear();
+
+									if(dd < 10){
+									    dd = '0' + dd;
+									} 
+									if(mm < 10){
+									    mm = '0' + mm;
+									} 
+									var today = yyyy + '/' + mm + '/' + dd;
+
+									if(feature.properties['Date'] == today.toString()) {
+										var properties = feature.properties
+
+										message = ' Ce cours à lieu en salle ' + properties['Lieu']
+									}
+					  			}
+					  		}
+						});
+
+						context = {}
+
+						if(message == '') {
+							message += 'Vous n\'avez pas cours aujourd\'hui.'
+						}
+					}
+		  		}
+		  		if (response.output.status == 6) {
+		  			if(context.groupe) {
+		  				var hours = 0
+		  				var bool = false
+		  				var date = ''
+			  			edt.features.forEach(function(feature) {
+					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
+					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.groupe)) {
+					  				var today = new Date();
+
+					  				if(context.date) {
+					  					today = new Date(context.date)
+					  				}
+
+									var dd = today.getDate();
+									var mm = today.getMonth()+1;
+
+									var yyyy = today.getFullYear();
+
+									if(dd < 10){
+									    dd = '0' + dd;
+									} 
+									if(mm < 10){
+									    mm = '0' + mm;
+									} 
+									var today = yyyy + '/' + mm + '/' + dd;
+
+									date = today
+									if(feature.properties['Date'] == today.toString()) {
+										var properties = feature.properties
+										hours += properties['Durée (min)']
+										bool = true
+									}
+					  			}
+					  		}
+						});
+			  			if(bool){
+			  				message = 'Vous avez ' + hours/60 + ' heures de cours le ' + date + '.'
+			  			}else {
+			  				message = ''
+			  			}
+
+						context = {}
+
+						if(message == '') {
+							message += 'Vous n\'avez pas cours'
+						}
+					}
+		  		}
+		  		if (response.output.status == 7) {
+		  			if(context.groupe) {
+		  				var bool = false
+			  			edt.features.forEach(function(feature) {
+					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
+					  			if(!bool && (feature.properties['Intitulé'].toLowerCase().includes("examen") || feature.properties['Intitulé'].toLowerCase().includes("ds"))) {
+									message = 'Vous avez un examen de ' +feature.properties['Intitulé'] + ' le ' + feature.properties['Date'] + ' à ' + feature.properties['Heure début'] + ' en salle ' + feature.properties['Lieu']
+									bool = true
+					  			}
+					  		}
+						});
+						context = {}
+
+						if(message == '') {
+							message += 'Vous n\'avez pas cours'
+						}
+					}
+		  		}
+		  		if (response.output.status == 8) {
+		  			if(context.groupe) {
+			  			edt.features.forEach(function(feature) {
+					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
+					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.cours.toLowerCase())) {
+									message = ' L\'enseignant de ce cours se nomme ' + feature.properties['Enseignant']
+					  			}
+					  		}
+						});
+
+						context = {}
+
+						if(message == '') {
+							message += 'Vous n\'avez pas ce cours .'
+						}
+					}
+		  		}
+		  	}
+
+		console.log('============================> Message ' + message)
 	  // Combine the output messages into one message.
-	  const output = response.output.text.join(' ');
+	  const output = (message == '') ? response.output.text.join(' ') : message;
 	  var resp = {
 		conversationToken: null,
 		expectUserResponse: true,
@@ -159,6 +439,7 @@ function sendResponse(response, resolve) {
 app.post('/api/google4IBM', function(args, res) {
 	return new Promise(function(resolve, reject) {
 	  const request = args.body;
+	  console.log('==========================================>   ' + args.body)
 	  console.log("Google Home is calling");
 	  console.log(JSON.stringify(request,null,2));
 	  const sessionId = args.body.conversation.conversationId;
