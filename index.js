@@ -24,6 +24,20 @@ var crous = require('./data/menu_ru.json');
 var bu = require('./data/bu.json');
 var meteo = require('./data/meteo.json');
 
+var month = new Array();
+month[0] = "Janvier";
+month[1] = "Février";
+month[2] = "Mars";
+month[3] = "Avril";
+month[4] = "Mai";
+month[5] = "Juin";
+month[6] = "Juillet";
+month[7] = "Août";
+month[8] = "Septempbre";
+month[9] = "Octobre";
+month[10] = "Novembre";
+month[11] = "Décembre";
+
 function errorResponse(reason) {
 	return {
 	  version: '1.0',
@@ -318,7 +332,7 @@ function sendResponse(response, resolve) {
 					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.cours.toLowerCase()) && feature.properties['Intitulé'].toLowerCase().includes(context.groupe) && !boolean) {
 										var properties = feature.properties
 
-										message = ' Le prochain cours de ' + properties['Intitulé'] + ' est le ' + properties['Date'].getDate() + ' ' + properties['Date'].getMonth() + ' ' + properies['Date'].getFullYear() + ' à ' + properties['Heure début'] + '.'
+										message = ' Le prochain cours de ' + properties['Intitulé'] + ' est le ' + new Date(properties['Date']).getDate() + ' ' + month[new Date(properties['Date']).getMonth()] + ' ' + new Date(properties['Date']).getFullYear() + ' à ' + properties['Heure début'] + '.'
 										boolean = true
 					  			}
 					  		}
@@ -426,7 +440,7 @@ function sendResponse(response, resolve) {
 			  			edt.features.forEach(function(feature) {
 					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
 					  			if(!bool && (feature.properties['Intitulé'].toLowerCase().includes("examen") || feature.properties['Intitulé'].toLowerCase().includes("ds"))) {
-									message = 'Vous avez un examen de ' +feature.properties['Intitulé'] + ' le ' + feature.properties['Date'] + ' à ' + feature.properties['Heure début'] + ' en salle ' + feature.properties['Lieu']
+									message = 'Vous avez un examen de ' +feature.properties['Intitulé'] + ' le ' + new Date(feature.properties['Date']).getDate() + ' ' + month[new Date(feature.properties['Date']).getMonth()] + ' ' + new Date(feature.properties['Date']).getFullYear() + ' à ' + feature.properties['Heure début'] + ' en salle ' + feature.properties['Lieu']
 									bool = true
 					  			}
 					  		}
