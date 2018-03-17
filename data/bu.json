@@ -1,5 +1,5 @@
 {
-  "BU Droit et Sciences économiques": {
+  "B.U Droit et Sciences économiques": {
     "lundi": {
       "ouverture": "08:00",
       "fermeture": "19:00"
@@ -25,7 +25,7 @@
       "fermeture": "17:00"
     }
   },
-  "BU lettres, sciences humaines et sociales": {
+  "B.U lettres, sciences humaines et sociales": {
     "lundi": {
       "ouverture": "08:00",
       "fermeture": "19:00"
@@ -51,7 +51,7 @@
       "fermeture": "12:30"
     }
   },
-  "BU Sciences": {
+  "B.U Sciences": {
     "lundi": {
       "ouverture": "08:00",
       "fermeture": "19:00"
@@ -77,7 +77,7 @@
       "fermeture": "12:00"
     }
   },
-  "BU Américaine": {
+  "B.U Américaine": {
     "lundi": {
       "ouverture": "13:00",
       "fermeture": "18:30"
@@ -103,7 +103,7 @@
       "fermeture": "17:00"
     }
   },
-  "BU Ingénieurs Brabois": {
+  "B.U Ingénieurs Brabois": {
     "lundi": {
       "ouverture": "08:00",
       "fermeture": "19:00"
@@ -129,7 +129,7 @@
       "fermeture": "17:00"
     }
   },
-  "BU Médiathèque du campus Artem": {
+  "B.U Médiathèque du campus Artem": {
     "lundi": {
       "ouverture": "08:30",
       "fermeture": "18:30"
@@ -155,7 +155,7 @@
       "fermeture": "17:30"
     }
   },
-  "BU Santé": {
+  "B.U Santé": {
     "lundi": {
       "ouverture": "08:30",
       "fermeture": "18:30"
