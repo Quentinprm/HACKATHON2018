@@ -1,0 +1,184 @@
+{
+  "BU Droit et Sciences économiques": {
+    "lundi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "mardi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "mercredi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "jeudi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "vendredi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "samedi": {
+      "ouverture": "08:00",
+      "fermeture": "17:00"
+    }
+  },
+  "BU lettres, sciences humaines et sociales": {
+    "lundi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "mardi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "mercredi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "jeudi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "vendredi": {
+      "ouverture": "08:00",
+      "fermeture": "18:00"
+    },
+    "samedi": {
+      "ouverture": "09:00",
+      "fermeture": "12:30"
+    }
+  },
+  "BU Sciences": {
+    "lundi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "mardi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "mercredi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "jeudi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "vendredi": {
+      "ouverture": "08:00",
+      "fermeture": "18:00"
+    },
+    "samedi": {
+      "ouverture": "09:00",
+      "fermeture": "12:00"
+    }
+  },
+  "BU Américaine": {
+    "lundi": {
+      "ouverture": "13:00",
+      "fermeture": "18:30"
+    },
+    "mardi": {
+      "ouverture": "13:00",
+      "fermeture": "18:00"
+    },
+    "mercredi": {
+      "ouverture": "13:00",
+      "fermeture": "18:00"
+    },
+    "jeudi": {
+      "ouverture": "13:00",
+      "fermeture": "18:30"
+    },
+    "vendredi": {
+      "ouverture": "13:00",
+      "fermeture": "17:00"
+    },
+    "samedi": {
+      "ouverture": "13:00",
+      "fermeture": "17:00"
+    }
+  },
+  "BU Ingénieurs Brabois": {
+    "lundi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "mardi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "mercredi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "jeudi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "vendredi": {
+      "ouverture": "08:00",
+      "fermeture": "19:00"
+    },
+    "samedi": {
+      "ouverture": "08:00",
+      "fermeture": "17:00"
+    }
+  },
+  "BU Médiathèque du campus Artem": {
+    "lundi": {
+      "ouverture": "08:30",
+      "fermeture": "18:30"
+    },
+    "mardi": {
+      "ouverture": "08:30",
+      "fermeture": "18:30"
+    },
+    "mercredi": {
+      "ouverture": "08:30",
+      "fermeture": "18:30"
+    },
+    "jeudi": {
+      "ouverture": "08:30",
+      "fermeture": "18:30"
+    },
+    "vendredi": {
+      "ouverture": "08:30",
+      "fermeture": "18:30"
+    },
+    "samedi": {
+      "ouverture": "08:30",
+      "fermeture": "17:30"
+    }
+  },
+  "BU Santé": {
+    "lundi": {
+      "ouverture": "08:30",
+      "fermeture": "18:30"
+    },
+    "mardi": {
+      "ouverture": "08:30",
+      "fermeture": "18:30"
+    },
+    "mercredi": {
+      "ouverture": "08:30",
+      "fermeture": "18:30"
+    },
+    "jeudi": {
+      "ouverture": "08:30",
+      "fermeture": "18:30"
+    },
+    "vendredi": {
+      "ouverture": "08:30",
+      "fermeture": "17:00"
+    },
+    "samedi": {
+      "ouverture": "09:30",
+      "fermeture": "16:00"
+    }
+  }
+}
