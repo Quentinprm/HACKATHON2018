@@ -186,16 +186,16 @@ function sendResponse(response, resolve) {
 							var messageMeteo= ''
 							if (meteo[jourmeteo]) {
 					  			if(meteo[jourmeteo]["risque_neige"] == "oui"){
-					  				messageMeteo = 'Il va neiger, couvrez vous bien !'
+					  				messageMeteo = 'Attention maître, il risque de neiger, couvrez vous bien !'
 					  			}else if(meteo[jourmeteo]["pluie"] != 0){
-					  				messageMeteo = 'Il risque de pleuvoir, pensez au parapluie !'
+					  				messageMeteo = 'Attention maître, il risque de pleuvoir, pensez au parapluie pour ne pas être mouillé!'
 					  			} else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
-					  				messageMeteo = 'Il va faire froid, couvrez vous bien !'
-								} else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
-					  				messageMeteo = 'La température de ce jour est mi figue mi raisin !'
-								} else {
-									messageMeteo = ' Il fera chaud, ne vous couvrez pas trop !'
-								}
+					  				messageMeteo = 'Attention, il va faire environ ' + ((meteo[jourmeteo]["temperature"]["sol"]) - 273)+' degrés ! Couvrez vous bien !'
+                  } else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
+                      messageMeteo = 'Je ne sais pas trop quoi penser de la météo de ce jour ! Ni trop froide, ni trop chaude à mon goût !'
+                  } else {
+                    messageMeteo = ' Vous avez de la chance maître, il fera chaud ce jour! Ne vous couvrez pas trop maître !'
+                  }
 								
 								message += messageMeteo
 							}
@@ -246,17 +246,17 @@ function sendResponse(response, resolve) {
 						} else {
 							var messageMeteo= ''
 							if (meteo[jourmeteo]) {
-				  			if(meteo[jourmeteo]["risque_neige"] == "oui"){
-				  				messageMeteo = 'Il va neiger, couvrez vous bien !'
-				  			}else if(meteo[jourmeteo]["pluie"] != 0){
-				  				messageMeteo = 'Il risque de pleuvoir, pensez au parapluie !'
-				  			} else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
-				  				messageMeteo = 'Il va faire froid, couvrez vous bien !'
-							} else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
-				  				messageMeteo = 'La température ce jour là sera mi figue mi raisin !'
-							} else {
-								messageMeteo = 'Ce jour ci il fera chaud, ne vous couvrez pas trop !'
-							}
+                if(meteo[jourmeteo]["risque_neige"] == "oui"){
+                  messageMeteo = 'Attention maître, il risque de neiger, couvrez vous bien !'
+                }else if(meteo[jourmeteo]["pluie"] != 0){
+                  messageMeteo = 'Attention maître, il risque de pleuvoir, pensez au parapluie pour ne pas être mouillé!'
+                } else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
+                  messageMeteo = 'Attention, il va faire environ ' + ((meteo[jourmeteo]["temperature"]["sol"]) - 273)+' degrés ! Couvrez vous bien !'
+                } else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
+                  messageMeteo = 'Je ne sais pas trop quoi penser de la météo de ce jour ! Ni trop froide, ni trop chaude à mon goût !'
+                } else {
+                  messageMeteo = ' Vous avez de la chance maître, il fera chaud ce jour! Ne vous couvrez pas trop maître !'
+                }
 
 							message += messageMeteo
 							}
@@ -305,17 +305,17 @@ function sendResponse(response, resolve) {
 						} else {
 							var messageMeteo= ''
 							if (meteo[jourmeteo]) {
-					  			if(meteo[jourmeteo]["risque_neige"] == "oui"){
-					  				messageMeteo = 'Ce soir là il risque de neiger, couvrez vous bien !'
-					  			}else if(meteo[jourmeteo]["pluie"] != 0){
-					  				messageMeteo = 'Ce soir là il risque de pleuvoir, pensez au parapluie !'
-					  			} else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
-					  				messageMeteo = 'Ce soir là il risque de faire froid, couvrez vous bien !'
-								} else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
-					  				messageMeteo = 'La température de ce jour est mi figue mi raisin !'
-								} else {
-									messageMeteo = 'Ce jour ci il fera chaud, ne vous couvrez pas trop !'
-								}
+                if(meteo[jourmeteo]["risque_neige"] == "oui"){
+                  messageMeteo = 'Attention maître, il risque de neiger, couvrez vous bien !'
+                }else if(meteo[jourmeteo]["pluie"] != 0){
+                  messageMeteo = 'Attention maître, il risque de pleuvoir, pensez au parapluie pour ne pas être mouillé!'
+                } else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
+                  messageMeteo = 'Attention, il va faire environ ' + ((meteo[jourmeteo]["temperature"]["sol"]) - 273)+' degrés ! Couvrez vous bien !'
+                } else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
+                  messageMeteo = 'Je ne sais pas trop quoi penser de la météo de ce jour ! Ni trop froide, ni trop chaude à mon goût !'
+                } else {
+                  messageMeteo = ' Vous avez de la chance maître, il fera chaud ce jour! Ne vous couvrez pas trop maître !'
+                }
 
 								message += messageMeteo
 								}
@@ -332,7 +332,7 @@ function sendResponse(response, resolve) {
 					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.cours.toLowerCase()) && feature.properties['Intitulé'].toLowerCase().includes(context.groupe) && !boolean) {
 										var properties = feature.properties
 
-										message = ' Le prochain cours de ' + properties['Intitulé'] + ' est le ' + new Date(properties['Date']).getDate() + ' ' + month[new Date(properties['Date']).getMonth()] + ' ' + new Date(properties['Date']).getFullYear() + ' à ' + properties['Heure début'] + '.'
+										message = ' Le prochain cours de ' + properties['Intitulé'] + ' est le, ' + new Date(properties['Date']).getDate() + ' ' + month[new Date(properties['Date']).getMonth()] + ' ' + new Date(properties['Date']).getFullYear() + ', à ' + properties['Heure début'] + '.'
 										boolean = true
 					  			}
 					  		}
@@ -440,7 +440,7 @@ function sendResponse(response, resolve) {
 			  			edt.features.forEach(function(feature) {
 					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
 					  			if(!bool && (feature.properties['Intitulé'].toLowerCase().includes("examen") || feature.properties['Intitulé'].toLowerCase().includes("ds"))) {
-									message = 'Vous avez un examen de ' +feature.properties['Intitulé'] + ' le ' + new Date(feature.properties['Date']).getDate() + ' ' + month[new Date(feature.properties['Date']).getMonth()] + ' ' + new Date(feature.properties['Date']).getFullYear() + ' à ' + feature.properties['Heure début'] + ' en salle ' + feature.properties['Lieu']
+									message = 'Vous avez un examen de ' +feature.properties['Intitulé'] + ' le, ' + new Date(feature.properties['Date']).getDate() + ' ' + month[new Date(feature.properties['Date']).getMonth()] + ' ' + new Date(feature.properties['Date']).getFullYear() + ', à ' + feature.properties['Heure début'] + ' en salle ' + feature.properties['Lieu']
 									bool = true
 					  			}
 					  		}
