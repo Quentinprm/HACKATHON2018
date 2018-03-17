@@ -4,69 +4,69 @@
       "19/03/18": {
         "Midi": {
           "Self": [
-            "sauté de porc hollandaise",
-            "filet de hoki",
-            "riz",
-            "gratin de courgettes"
+            "sauté de porc hollandaise.",
+            "filet de hoki.",
+            "riz ou gratin de courgettes."
+
           ],
           "Salle_Administrative": [
-            "sauté de porc hollandaise",
-            "filet de hoki",
-            "bavette à l’échalote",
-            "riz",
-            "trio de légumes",
-            "gratin de courgettes"
+            "sauté de porc hollandaise.",
+            "filet de hoki.",
+            "bavette à l’échalote.",
+            "riz,",
+            "trio de légumes ou",
+            "gratin de courgettes."
           ],
           "Cafeteria": [
-            "entrées froides",
-            "pasta box",
-            "potage",
-            "sandwich/panini",
-            "plat du jour",
-            "confiseries",
-            "desserts lactés/fruits"
+            "entrées froides.",
+            "pasta box.",
+            "potage.",
+            "sandwich ou panini.",
+            "plat du jour,",
+            "confiseries,",
+            "desserts lactés et fruits."
           ]
         },
         "Soir": {
           "Self": [
-            "croque monsieur",
-            "brochette de poisson nature",
-            "trio de légumes",
-            "potatoes"
+            "croque monsieur.",
+            "brochette de poisson nature.",
+            "trio de légumes ou",
+            "potatoes."
           ]
         }
       },
       "20/03/18": {
         "Midi": {
           "Self": [
-            "poulet rôti",
-            "filet de colin mariné",
-            "frites",
-            "pois carottes"
+            "poulet rôti.",
+            "filet de colin mariné.",
+            "frites ou",
+            "petits pois carottes."
           ],
           "Salle_Administrative": [
-            "poulet rôti",
-            "filet de colin mariné",
-            "goulasch",
-            "frites",
-            "pois carottes",
-            "duo de choux"
+            "poulet rôti.",
+            "filet de colin mariné.",
+            "goulasch.",
+            "frites,",
+            "petits pois carottes",
+            "ou duo de choux"
           ],
           "Cafeteria": [
-            "entrées froides",
-            "pasta box",
-            "potage",
-            "sandwich/panini",
-            "plat du jour",
-            "confiseries",
-            "desserts lactés/fruits"
+            "entrées froides.",
+            "pasta box.",
+            "potage.",
+            "sandwich ou panini",
+            "plat du jour,",
+            "confiseries,",
+            "desserts lactés ou fruits"
           ]
         },
         "Soir": {
           "Self": [
-            "goulasch",
-            "quenelles de brochet",
-            "semoule",
+            "goulasch.",
+            "quenelles de brochet.",
+            "semoule ou ",
             "duo de choux"
           ]
         }
@@ -74,96 +74,96 @@
       "21/03/18": {
         "Midi": {
           "Self": [
-            "pavé de merlu",
-            "tajine VG",
-            "semoule",
+            "pavé de merlu.",
+            "tajine VG.",
+            "semoule ou ",
             "brocolis"
           ],
           "Salle_Administrative": [
-            "pavé de merlu",
-            "tajine VG",
-            "grillade de porc savoyarde",
-            "semoule",
-            "brocolis",
+            "pavé de merlu.",
+            "tajine VG.",
+            "grillade de porc savoyarde.",
+            "semoule, ",
+            "brocolis ou ",
             "printanière"
           ],
           "Cafeteria": [
-            "entrées froides",
-            "pasta box",
-            "potage",
-            "sandwich/panini",
-            "plat du jour",
-            "confiseries",
-            "desserts lactés/fruits"
+            "entrées froides.",
+            "pasta box.",
+            "potage.",
+            "sandwich ou panini",
+            "plat du jour,",
+            "confiseries,",
+            "desserts lactés ou fruits"
           ]
         },
         "Soir": {
           "Self": [
-            "beignet de poisson",
-            "escalope de porc savoyarde",
-            "quinoa",
-            "printanière"
+            "beignet de poisson.",
+            "escalope de porc savoyarde.",
+            "quinoa ou ",
+            "printanière de légumes."
           ]
         }
       },
       "22/03/18": {
         "Midi": {
           "Self": [
-            "poisson frais",
-            "cordon bleu",
-            "pomme vapeur",
-            "carottes primeur"
+            "poisson frais.",
+            "cordon bleu.",
+            "pomme vapeur ou ",
+            "carottes primeur."
           ],
           "Salle_Administrative": [
             "poisson frais",
-            "pdt et son accompagnement",
-            "émincé de volaille au poivre",
-            "carottes primeur",
-            "poêlée forestière"
+            " et pommes des terre en accompagnemen.t",
+            "émincé de volaille au poivre.",
+            "carottes primeur ou ",
+            "poêlée forestière."
           ],
           "Cafeteria": [
-            "entrées froides",
-            "pasta box",
-            "potage",
-            "sandwich/panini",
-            "plat du jour",
-            "confiseries",
-            "desserts lactés/fruits"
+            "entrées froides.",
+            "pasta box.",
+            "potage.",
+            "sandwich ou panini,",
+            "plat du jour,",
+            "confiseries,",
+            "desserts lactés ou fruits."
           ]
         },
         "Soir": {
           "Self": [
-            "filet meunière",
-            "émincé de volaille au poivre",
-            "poêlée forestière",
-            "pdt rôties"
+            "filet meunière.",
+            "émincé de volaille au poivre.",
+            "poêlée forestière ou ",
+            "pommes de terre rôties."
           ]
         }
       },
       "23/03/18": {
         "Midi": {
           "Self": [
-            "pavé de saumon",
-            "cervelas alsacien",
-            "penne",
-            "flageolets carottes"
+            "pavé de saumon.",
+            "cervelas alsacien.",
+            "penne, ",
+            "flageolets ou carottes."
           ],
           "Salle_Administrative": [
-            "pavé de saumon",
-            "cervelas alsacien",
-            "boule bœuf",
-            "penne",
-            "battonnière de légumes",
-            "flageolets carottes"
+            "pavé de saumon.",
+            "cervelas alsacien.",
+            "boule bœuf.",
+            "penne, ",
+            "battonnière de légumes,",
+            "flageolets ou carottes."
           ],
           "Cafeteria": [
-            "entrées froides",
-            "pasta box",
-            "potage",
-            "sandwich/panini",
-            "plat du jour",
-            "confiseries",
-            "desserts lactés/fruits"
+            "entrées froides.",
+            "pasta box.",
+            "potage.",
+            "sandwich ou panini.",
+            "plat du jour,",
+            "confiseries,",
+            "desserts lactés ou fruits."
           ]
         },
         "Soir": {
@@ -179,55 +179,54 @@
       "19/03/18": {
         "Midi": {
           "Brasserie": [
-            "sauté d'agneau au thym",
-            "émincé de porc aux champignons noirs",
-            "filet de tilapia à la tomate",
-            "palette à la diable",
-            "plat végétarien:quiche tomate mozza",
-            "riz pilaf",
-            "poêlé italienne",
-            "flageolet /carotte"
+            "sauté d'agneau au thym.",
+            "émincé de porc aux champignons noirs.",
+            "filet de tilapia à la tomate.",
+            "palette à la diable.",
+            "en plat végétarien: quiche tomate mozza,",
+            "riz pilaf ou",
+            "poêlé italienne.",
+            "flageolet ou carotte."
           ],
           "Zen": [
-            "steak haché sauce poivre",
-            "filet de tilapia à la tomate",
-            "riz pilaf",
-            "flageolet /carotte"
+            "steak haché sauce au poivre.",
+            "filet de tilapia à la tomate,",
+            "riz pilaf.",
+            "flageolet ou carotte."
           ],
           "Pop": [
-            "palette à la diable",
-            "plat végétarien:quiche tomate mozza",
-            "riz pilaf",
-            "flageolet /carotte"
+            "palette à la diable.",
+            "en plat végétarien:quiche tomate mozza,",
+            "ou riz pilaf.",
+            "flageolet ou carotte."
           ]
         },
         "Soir": {
           "Self": [
-            "Chaîne traditionnelle",
-            "penne à la bolognaise",
-            "filet de merlu sauce citron",
-            "pennes au beurre",
-            "poêlé italienne"
+            "penne à la bolognaise,",
+            "filet de merlu sauce citron ou",
+            "pennes au beurre.",
+            "poêlé italienne."
           ]
         }
       },
       "20/03/18": {
         "Midi": {
           "Brasserie": [
-            "cordon bleu",
-            "filet de sandre sauce beurre blanc",
-            "poulet Hyderabad",
-            "pâté lorrain+salade verte",
-            "plat végétarien:galette de blé gratinée",
-            "spaetzle au beurre",
-            "gratin de légumes",
-            "épinard béchamel"
+            "cordon bleu,",
+            "filet de sandre sauce beurre blanc,",
+            "poulet Hyderabad.",
+            "pâté lorrain + salade verte.",
+            "en plat végétarien:galette de blé gratinée,",
+            "spaetzle au beurre,",
+            "gratin de légumes,",
+            "épinard béchamel."
           ],
           "Zen": [
-            "nugget de volaille",
-            "filet de merlu sauce citron",
-            "frites",
-            "épinard béchamel"
+            "nugget de volaille.",
+            "filet de merlu sauce citron.",
+            "frites ou ",
+            "épinard béchamel."
           ],
           "Pop": [
             "pizza reine",
