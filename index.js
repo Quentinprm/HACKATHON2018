@@ -22,6 +22,7 @@ let Wresponse;
 var edt = require('./data/edt.json');
 var crous = require('./data/menu_ru.json');
 var bu = require('./data/bu.json');
+var meteo = require('./data/meteo.json');
 
 function errorResponse(reason) {
 	return {
@@ -152,7 +153,8 @@ function sendResponse(response, resolve) {
 									    mm = '0' + mm;
 									} 
 									var today = yyyy + '/' + mm + '/' + dd;
-
+									var todaymeteo = yyyy + '-' + mm + '-' + dd;
+									jourmeteo = todaymeteo + ' ' + feature.properties['Heure début']
 									if(feature.properties['Date'] == today.toString()) {
 										var properties = feature.properties
 
@@ -166,6 +168,23 @@ function sendResponse(response, resolve) {
 
 						if(message == '') {
 							message += 'Vous n\'avez pas cours ce jour.'
+						}else{
+							var messageMeteo= ''
+							if (meteo[jourmeteo]) {
+					  			if(meteo[jourmeteo]["risque_neige"] == "oui"){
+					  				messageMeteo = 'Il va neiger, couvrez vous bien !'
+					  			}else if(meteo[jourmeteo]["pluie"] != 0){
+					  				messageMeteo = 'Il risque de pleuvoir, pensez au parapluie !'
+					  			} else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
+					  				messageMeteo = 'Il va faire froid, couvrez vous bien !'
+								} else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
+					  				messageMeteo = 'La température de ce jour est mi figue mi raisin !'
+								} else {
+									messageMeteo = ' Il fera chaud, ne vous couvrez pas trop !'
+								}
+								
+								message += messageMeteo
+							}
 						}
 					}
 				}
@@ -173,7 +192,7 @@ function sendResponse(response, resolve) {
 		  		if (response.output.status == 2) {
 		  			if(context.groupe) {
 		  				var boolean = false
-
+		  				var jourmeteo = null
 			  			edt.features.forEach(function(feature) {
 					  		if(feature.properties['Formation'].toLowerCase().includes(context.filiere.toLowerCase())) {
 					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.groupe)) {
@@ -195,21 +214,38 @@ function sendResponse(response, resolve) {
 									    mm = '0' + mm;
 									} 
 									var today = yyyy + '/' + mm + '/' + dd;
-
+									var todaymeteo = yyyy + '-' + mm + '-' + dd;
+									jourmeteo = todaymeteo + ' ' + feature.properties['Heure début']
 									if(feature.properties['Date'] == today.toString() && !boolean) {
 										var properties = feature.properties
-
 										message += ' Vous commencez à ' + properties['Heure début'] + '. Pensez à mettre un réveil !'
 										boolean = true
 									}
 					  			}
 					  		}
 						});
-
+			  			
 						context = {}
 
 						if(message == '') {
 							message += 'Vous n\'avez pas cours ce jour.'
+						} else {
+							var messageMeteo= ''
+							if (meteo[jourmeteo]) {
+				  			if(meteo[jourmeteo]["risque_neige"] == "oui"){
+				  				messageMeteo = 'Il va neiger, couvrez vous bien !'
+				  			}else if(meteo[jourmeteo]["pluie"] != 0){
+				  				messageMeteo = 'Il risque de pleuvoir, pensez au parapluie !'
+				  			} else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
+				  				messageMeteo = 'Il va faire froid, couvrez vous bien !'
+							} else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
+				  				messageMeteo = 'La température ce jour là sera mi figue mi raisin !'
+							} else {
+								messageMeteo = 'Ce jour ci il fera chaud, ne vous couvrez pas trop !'
+							}
+
+							message += messageMeteo
+							}
 						}
 					}
 		  		}
@@ -237,7 +273,8 @@ function sendResponse(response, resolve) {
 									    mm = '0' + mm;
 									} 
 									var today = yyyy + '/' + mm + '/' + dd;
-
+									var todaymeteo = yyyy + '-' + mm + '-' + dd;
+									jourmeteo = todaymeteo + ' ' + feature.properties['Heure début']
 									if(feature.properties['Date'] == today.toString()) {
 										var properties = feature.properties
 
@@ -246,12 +283,29 @@ function sendResponse(response, resolve) {
 					  			}
 					  		}
 						});
-
+			  			
 						context = {}
 
 						if(message == '') {
 							message += 'Vous n\'avez pas cours ce jour.'
-						}
+						} else {
+							var messageMeteo= ''
+							if (meteo[jourmeteo]) {
+					  			if(meteo[jourmeteo]["risque_neige"] == "oui"){
+					  				messageMeteo = 'Ce soir là il risque de neiger, couvrez vous bien !'
+					  			}else if(meteo[jourmeteo]["pluie"] != 0){
+					  				messageMeteo = 'Ce soir là il risque de pleuvoir, pensez au parapluie !'
+					  			} else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
+					  				messageMeteo = 'Ce soir là il risque de faire froid, couvrez vous bien !'
+								} else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
+					  				messageMeteo = 'La température de ce jour est mi figue mi raisin !'
+								} else {
+									messageMeteo = 'Ce jour ci il fera chaud, ne vous couvrez pas trop !'
+								}
+
+								message += messageMeteo
+								}
+							}
 					}
 		  		}
 
@@ -264,7 +318,7 @@ function sendResponse(response, resolve) {
 					  			if(feature.properties['Intitulé'].toLowerCase().includes(context.cours.toLowerCase()) && feature.properties['Intitulé'].toLowerCase().includes(context.groupe) && !boolean) {
 										var properties = feature.properties
 
-										message = ' Le prochain cours de ' + properties['Intitulé'] + ' est le ' + properties['Date'] + ' à ' + properties['Heure début'] + '.'
+										message = ' Le prochain cours de ' + properties['Intitulé'] + ' est le ' + properties['Date'].getDate() + ' ' + properties['Date'].getMonth() + ' ' + properies['Date'].getFullYear() + ' à ' + properties['Heure début'] + '.'
 										boolean = true
 					  			}
 					  		}
