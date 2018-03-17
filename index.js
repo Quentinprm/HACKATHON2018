@@ -494,7 +494,7 @@ function sendResponse(response, resolve) {
 		  					var crousHeure = (context.crous_heure) ? context.crous_heure : 'Midi'
 		  					if (crous[context.crous]['menu'][today][crousHeure]) {
 		  						if (crous[context.crous]['menu'][today][crousHeure][context.crous_salle]) {
-		  							message += 'Le restaurant ' + context.crous_salle + ' sert le ' + today + ' du :\n'
+		  							message += 'Le restaurant ' + context.crous + ' sert le ' + today + ' du :\n'
 		  							crous[context.crous]['menu'][today][crousHeure][context.crous_salle].forEach(function(repas) {
 		  								message += repas + ',\n'
 		  							});
