@@ -192,7 +192,7 @@ function sendResponse(response, resolve) {
 					  			} else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
 					  				messageMeteo = 'Attention, il va faire environ ' + ((meteo[jourmeteo]["temperature"]["sol"]) - 273)+' degrés ! Couvrez vous bien !'
                   } else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
-                      messageMeteo = 'Je ne sais pas trop quoi penser de la météo de ce jour ! Ni trop froide, ni trop chaude à mon goût !'
+                      messageMeteo = 'En ce qui concerne la météo de ce jour, je ne sais pas trop quoi en penser ! Ni trop froide, ni trop chaude à mon goût !'
                   } else {
                     messageMeteo = ' Vous avez de la chance maître, il fera chaud ce jour! Ne vous couvrez pas trop maître !'
                   }
@@ -253,7 +253,7 @@ function sendResponse(response, resolve) {
                 } else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
                   messageMeteo = 'Attention, il va faire environ ' + ((meteo[jourmeteo]["temperature"]["sol"]) - 273)+' degrés ! Couvrez vous bien !'
                 } else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
-                  messageMeteo = 'Je ne sais pas trop quoi penser de la météo de ce jour ! Ni trop froide, ni trop chaude à mon goût !'
+                  messageMeteo = 'En ce qui concerne la météo de ce jour, je ne sais pas trop quoi en penser ! Ni trop froide, ni trop chaude à mon goût !'
                 } else {
                   messageMeteo = ' Vous avez de la chance maître, il fera chaud ce jour! Ne vous couvrez pas trop maître !'
                 }
@@ -312,7 +312,7 @@ function sendResponse(response, resolve) {
                 } else if(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 5 ){
                   messageMeteo = 'Attention, il va faire environ ' + ((meteo[jourmeteo]["temperature"]["sol"]) - 273)+' degrés ! Couvrez vous bien !'
                 } else if((((meteo[jourmeteo]["temperature"]["sol"]) - 273) > 5 )&&(((meteo[jourmeteo]["temperature"]["sol"]) - 273) < 20 )){
-                  messageMeteo = 'Je ne sais pas trop quoi penser de la météo de ce jour ! Ni trop froide, ni trop chaude à mon goût !'
+                  messageMeteo = 'En ce qui concerne la météo de ce jour, je ne sais pas trop quoi en penser ! Ni trop froide, ni trop chaude à mon goût !'
                 } else {
                   messageMeteo = ' Vous avez de la chance maître, il fera chaud ce jour! Ne vous couvrez pas trop maître !'
                 }
@@ -477,6 +477,9 @@ function sendResponse(response, resolve) {
 					  		today = new Date(context.date)
 					  	}
 
+
+						var todayShowed = today
+
 						var dd = today.getDate();
 						var mm = today.getMonth()+1;
 
@@ -488,13 +491,13 @@ function sendResponse(response, resolve) {
 						if(mm < 10){
 						    mm = '0' + mm;
 						} 
-						var today = dd + '/' + mm + '/' + yyyy.toString().slice(2);
+						today = dd + '/' + mm + '/' + yyyy.toString().slice(2);
 
 		  				if (crous[context.crous]['menu'][today]) {
 		  					var crousHeure = (context.crous_heure) ? context.crous_heure : 'Midi'
 		  					if (crous[context.crous]['menu'][today][crousHeure]) {
 		  						if (crous[context.crous]['menu'][today][crousHeure][context.crous_salle]) {
-		  							message += 'Le restaurant ' + context.crous + ' sert le, ' + new Date(today).getDate() + ' ' + month[new Date(today).getMonth()] + ' ' + new Date(today).getFullYear() + ', du :\n'
+		  							message += 'Le restaurant ' + context.crous + ' sert le, ' + todayShowed.getDate() + ' ' + month[todayShowed.getMonth()] + ' ' + todayShowed.getFullYear() + ', du :\n'
 		  							crous[context.crous]['menu'][today][crousHeure][context.crous_salle].forEach(function(repas) {
 		  								message += repas + '\n'
 		  							});
