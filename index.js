@@ -19,7 +19,9 @@ let redisClient;
 let context;
 let Wresponse;
 
-var edt = require('./Data/edt.json');
+var edt = require('./data/edt.json');
+var crous = require('./data/menu_ru.json');
+var bu = require('./data/bu.json');
 
 function errorResponse(reason) {
 	return {
@@ -360,7 +362,7 @@ function sendResponse(response, resolve) {
 						context = {}
 
 						if(message == '') {
-							message += 'Vous n\'avez pas cours'
+							message += 'Vous n\'avez pas cours.'
 						}
 					}
 		  		}
@@ -378,7 +380,7 @@ function sendResponse(response, resolve) {
 						context = {}
 
 						if(message == '') {
-							message += 'Vous n\'avez pas cours'
+							message += 'Vous n\'avez pas cours.'
 						}
 					}
 		  		}
@@ -395,7 +397,61 @@ function sendResponse(response, resolve) {
 						context = {}
 
 						if(message == '') {
-							message += 'Vous n\'avez pas ce cours .'
+							message += 'Vous n\'avez pas ce cours.'
+						}
+					}
+		  		}
+		  		if (response.output.status == 9) {
+		  			if(crous[context.crous]) {
+		  				var today = new Date();
+
+					  	if(context.date) {
+					  		today = new Date(context.date)
+					  	}
+
+						var dd = today.getDate();
+						var mm = today.getMonth()+1;
+
+						var yyyy = today.getFullYear();
+
+						if(dd < 10){
+						    dd = '0' + dd;
+						} 
+						if(mm < 10){
+						    mm = '0' + mm;
+						} 
+						var today = dd + '/' + mm + '/' + yyyy.toString().slice(2);
+
+		  				if (crous[context.crous]['menu'][today]) {
+		  					var crousHeure = (context.crous_heure) ? context.crous_heure : 'Midi'
+		  					if (crous[context.crous]['menu'][today][crousHeure]) {
+		  						if (crous[context.crous]['menu'][today][crousHeure][context.crous_salle]) {
+		  							message += 'Le restaurant ' + context.crous_salle + ' sert le ' + today + ' du :\n'
+		  							crous[context.crous]['menu'][today][crousHeure][context.crous_salle].forEach(function(repas) {
+		  								message += repas + ',\n'
+		  							});
+		  							message += 'Bon appétit !'
+		  						}
+		  					}
+		  				}
+			 
+						context = {}
+
+						if(message == '') {
+							message += 'Ce restaurant ne sert pas aujourd\'hui.'
+						}
+					}
+		  		}
+		  		if (response.output.status == 10) {
+		  			if(bu[context.bu]) {
+		  				if(bu[context.bu][context.jours.toLowerCase()]) {
+		  					message = 'La bibliothèque ' + context.bu + ' est ouverte de ' + bu[context.bu][context.jours.toLowerCase()]['ouverture'] + ' à ' + bu[context.bu][context.jours.toLowerCase()]['fermeture'] + ' le ' + context.jours.toLowerCase() + '.'
+		  				}
+			 
+						context = {}
+
+						if(message == '') {
+							message += 'Cette BU n\'est pas ouverte ce jour-ci.'
 						}
 					}
 		  		}
