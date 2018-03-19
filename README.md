@@ -1,5 +1,5 @@
 # Watson Conversation & Google Home
-A code allowing you to demo Watson Conversation with Google Home.
+A code allowing you to request your planning at google home with weather information and menu of University Restaurants.
 
 ## Components of the solution
 
